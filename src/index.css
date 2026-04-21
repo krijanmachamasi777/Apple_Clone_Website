@@ -1,0 +1,80 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  min-height: 100vh;
+  background-color: #000;
+}
+/* Header */
+header {
+  width: 100%;
+  background-color: #000; /* Apple-style dark */
+  padding: 10px 30px;
+}
+
+/* Navbar container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+nav img {
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Nav links */
+ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: #f5f5f7;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+li a:hover {
+  color: #2997ff; /* Apple blue hover */
+}
+
+/* Right section */
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.gap-3 {
+  gap: 15px;
+}
+
+/* Buttons */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button img {
+  height: 18px;
+  transition: 0.3s;
+}
+
+button img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  ul {
+    display: none; /* hide menu on small screens */
+  }
+}
